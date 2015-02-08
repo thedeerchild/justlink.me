@@ -1,8 +1,19 @@
 <template name="create">
-	<h1>Create your Tinder</h1>
-	<form class="create">
-		<input name="tinder" type="text" placeholder="Tinder for...?" required />
-		<textarea name="description" placeholder="How would you describe your use case?"></textarea>
-		<button type="submit">Make it so.</button>
-	</form>
+    <h1>Create your Tinder</h1>
+    <form class="create">
+        <div class="row">
+            <div class="input-field">
+                <input name="tinder" type="text" required />
+                <label>Tinder for...?</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <textarea name="description" placeholder="" class="materialize-textarea"></textarea>
+                <label>How would you describe your use case?</label>
+            </div>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Make it So.</button>
+    </form>
+
 </template>
