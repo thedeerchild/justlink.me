@@ -4,8 +4,8 @@ Template.create.events({
 		var description = $(event.target).find('[name=description]').val();
 		Meteor.call("createTinder", theTinder, description, function(error, result) {
 			if (result) {
-				alert("You're good to go.");
-				Router.go('home');
+				alert("It's running");
+				Router.go('tinda');
 			} else {
 				alert("Fail.");
 			}
