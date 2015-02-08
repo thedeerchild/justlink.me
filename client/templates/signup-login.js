@@ -20,11 +20,12 @@ if (Meteor.isClient) {
 							console.log(err);
 							//console.log(err.error);
 							if (!err) {
+								// check where you're coming from
 								Router.go('create');
 							} else {
-
+								alert(err.error + " - unique gibberish #1");
 							}
-						})
+						});
 					}
 				}
 			});
