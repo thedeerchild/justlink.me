@@ -1,13 +1,22 @@
 <template name="header">
-	[Logo]
 
-	{{#if currentUser}}
-		<button class="logout">Logout</button>
-	{{else}}
-		{{#if activeRouteClass 'signupLogin'}}
-			<!-- do nothing -->
-		{{else}}
-			<button class="signupLogin">Sign Up/Log In</button>
-		{{/if}}
-	{{/if}}
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">Logo</a>
+            <ul id="nav-mobile" class="right side-nav">
+                {{#if currentUser}}
+                    <li class="logout">Logout</li>
+                {{else}}
+                    {{#if activeRouteClass 'signupLogin'}}
+                        <!-- do nothing -->
+                    {{else}}
+                        <li class="signupLogin">Sign Up/Log In</li>
+                    {{/if}}
+                {{/if}}
+            </ul>
+        </div>
+    </nav>
+
+
+
 </template>
