@@ -10,7 +10,7 @@ if (Meteor.isClient) {
 
 			Accounts.createUser({"email": email, "password": password}, function(err) {
 				console.log(err);
-				console.log(err.error);
+				//console.log(err.error);
 				if (!err) {
 					Router.go('create');
 				} else {
