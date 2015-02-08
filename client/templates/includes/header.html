@@ -1,3 +1,13 @@
 <template name="header">
 	[Logo]
+
+	{{#if currentUser}}
+		<button class="logout">Logout</button>
+	{{else}}
+		{{#if activeRouteClass 'signupLogin'}}
+			<!-- do nothing -->
+		{{else}}
+			<button class="signupLogin">Sign Up/Log In</button>
+		{{/if}}
+	{{/if}}
 </template>

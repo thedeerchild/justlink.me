@@ -7,6 +7,7 @@
 meteor-platform
 autopublish
 insecure
-matthew:foundation5-sass
 iron:router
 fourseven:scss
+d0minikk:materialize-meteor
+accounts-password
